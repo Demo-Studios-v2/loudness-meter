@@ -324,12 +324,12 @@
       this.state = "recording";
       this.workerAdapter.message({ type: "record" });
 
-      if (this.offline) {
-        this.source.start();
-        this._startRendering().then((renderedBuffer) =>
-          this.input(renderedBuffer)
-        );
-      }
+      // if (this.offline) {
+      //   this.source.start();
+      //   this._startRendering().then((renderedBuffer) =>
+      //     this.input(renderedBuffer)
+      //   );
+      // }
     }
 
     pause() {
